@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Internacional da Mulher</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6ff;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #f300aa;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h2 {
+            color: #f700d6;
+            border-bottom: 2px solid #e1bee7;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* Seção de Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-left: 5px solid #04f554;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #7c060f;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #6e0617;
+            color: #ecf0f1;
+            margin-top: 50px;
+        }
+
+        /* Botão Interativo */
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #d81b60;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ad1457;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>8 de Março</h1>
+        <p></p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Por que celebramos?</h2>
+            <p>Mais do que uma data comemorativa, o dia de hoje é um lembrete das lutas históricas por igualdade, justiça e pelo reconhecimento do papel fundamental das mulheres em todos os pilares da sociedade.</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>História</h3>
+                <p>A data originou-se das manifestações de mulheres operárias por melhores condições de trabalho e direito ao voto no início do século XX.</p>
+            </div>
+            <div class="card">
+                <h3>Conquistas</h3>
+                <p>Da ciência à política, as mulheres continuam quebrando barreiras e redefinindo o que é possível alcançar em todas as áreas.</p>
+            </div>
+            <div class="card">
+                <h3>Futuro</h3>
+                <p>O objetivo é um mundo onde a equidade de gênero não seja um ideal, mas uma realidade cotidiana para todas as meninas e mulheres.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="#" class="cta-button">Homenageie uma Mulher</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Site feito por Estela Rossini
+    </footer>
+
+</body>
+</html>
