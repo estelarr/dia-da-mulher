@@ -5,214 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia Internacional da Mulher | 8 de Março</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #8e24aa;
-            --primary-light: #e1bee7;
-            --accent: #d81b60;
-            --text-dark: #2d3436;
-            --text-light: #636e72;
-            --bg-page: #faf9ff;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-page);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        /* Cabeçalho com Gradiente */
-        header {
-            background: linear-gradient(135deg, #6a1b9a 0%, #ad1457 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3.5rem;
-            font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        header p {
-            font-size: 1.3rem;
-            margin-top: 15px;
-            font-weight: 300;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Conteúdo */
-        .container {
-            max-width: 1000px;
-            margin: -40px auto 60px;
-            padding: 0 20px;
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 60px;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .intro:hover {
-            transform: translateY(-5px);
-        }
-
-        .intro h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .intro p {
-            color: var(--text-light);
-            font-size: 1rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Grid de Cards */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: all 0.3s ease;
-            border-bottom: 4px solid transparent;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            border-bottom: 4px solid var(--accent);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
-        }
-
-        .card h3 {
-            margin-top: 0;
-            color: var(--primary);
-            font-size: 1.5rem;
-        }
-
-        .card p {
-            color: var(--text-light);
-            font-size: 1rem;
-        }
-
-        /* Botão */
-        .cta-container {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 16px 40px;
-            background-color: var(--accent);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            transition: transform 0.2s, background 0.3s;
-            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
-        }
-
-        .cta-button:hover {
-            background-color: #c2185b;
-            transform: scale(1.05);
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #2d3436;
-            color: #dfe6e9;
-        }
-
-        footer p {
-            margin: 5px 0;
-            font-size: 0.9rem;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            header p {
-                font-size: 1.1rem;
-            }
-
-            .intro {
-                padding: 30px 20px;
-            }
-
-            .intro h2 {
-                font-size: 1.8rem;
-            }
-
-            .grid {
-                gap: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            .intro h2 {
-                font-size: 1.5rem;
-            }
-
-            .card {
-                padding: 20px;
-            }
-
-            .cta-button {
-                padding: 14px 30px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Cabeçalho -->
     <header>
         <h1>Dia Internacional da Mulher</h1>
         <p>Celebrando a força, a coragem e a contribuição das mulheres em todo o mundo.</p>
     </header>
 
+    <!-- Conteúdo principal -->
     <div class="container">
+        <!-- Seção introdutória -->
         <div class="intro">
             <h2>8 de Março</h2>
             <p>O Dia Internacional da Mulher é um momento para refletir sobre a igualdade de gênero e homenagear as conquistas sociais, políticas e culturais das mulheres.</p>
         </div>
 
+        <!-- Grid de cards -->
         <div class="grid">
             <div class="card">
                 <h3>História</h3>
@@ -228,13 +39,15 @@
             </div>
         </div>
 
+        <!-- Botão Call-to-Action -->
         <div class="cta-container">
-            <a href="#" class="cta-button">Saiba Mais</a>
+            <a href="https://pt.wikipedia.org/wiki/Dia_Internacional_das_Mulheres" class="cta-button" target="_blank" rel="noopener noreferrer">Saiba Mais</a>
         </div>
     </div>
 
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Todos os direitos reservados.</p>
+        <p>&copy; 2026 Todos os direitos reservados á Estela Rossini.</p>
         <p>Feito com 💜 para celebrar o Dia da Mulher</p>
     </footer>
 
